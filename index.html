@@ -49,11 +49,11 @@
 
     .container {
       width: 100%;
-      padding-left: 1rem;
       margin-right: auto;
       margin-left: auto;
       height: 150vh;
     }
+
     @media (max-width: 480px) {
       .container {
         height: 120vh;
@@ -138,8 +138,8 @@
     .form-email {
       position: relative;
       max-width: 500px;
-      margin: auto;
       top: 30px;
+      margin: auto;
     }
 
     .ui-card {
@@ -171,6 +171,24 @@
       padding: 2rem;
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
+    }
+
+    @media (max-width: 480px) {
+      .form-email {
+        margin: auto 1rem;
+      }
+
+      .ui-card .header-card {
+        padding: 1rem 1rem 0 1rem;
+      }
+
+      .ui-hero .body-card {
+        padding: 1rem;
+      }
+
+      #clock {
+        display: flex;
+      }
     }
 
     .ui-hero.hero-center form {
@@ -399,14 +417,16 @@
             target="_blank" novalidate>
             <div id="mc_embed_signup_scroll" class="form-group">
               <div class="input-group">
-                <input type="email" value="" name="EMAIL" placeholder="Enter your email" class="required email input-form-mail" id="mce-EMAIL">
+                <input type="email" value="" name="EMAIL" placeholder="Enter your email"
+                       class="required email input-form-mail" id="mce-EMAIL">
               </div>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                                                                                         name="b_e3b50f08d097b6efc7c91bd95_3b82fba4f0"
                                                                                         tabindex="-1" value=""></div>
-              <div class="clear input-group-btn"><input type="submit" value="Notifiy me" name="subscribe" id="mc-embedded-subscribe"
-                                        class="button btn-color btn-notify btn"></div>
+              <div class="clear input-group-btn"><input type="submit" value="Notifiy me" name="subscribe"
+                                                        id="mc-embedded-subscribe"
+                                                        class="button btn-color btn-notify btn"></div>
             </div>
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
